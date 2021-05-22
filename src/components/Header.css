@@ -1,0 +1,11 @@
+.Header {
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.Header__image {
+  object-fit: contain;
+  width: 60px;
+  height: 30px;
+}
