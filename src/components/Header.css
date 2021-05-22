@@ -1,7 +1,9 @@
 .Header {
-  padding: 20px;
+  padding: 5px 20px;
   background-color: white;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Header__image {

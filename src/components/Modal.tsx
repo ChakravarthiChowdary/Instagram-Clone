@@ -11,19 +11,20 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    marginLeft: 20,
+    marginRight: 20,
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    // border: "2px solid #000",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(0, 4, 3),
   },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: "100%", // Fix IE 11 issue.
+    width: "100%",
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -38,7 +39,7 @@ interface IProps {
 
 const AuthModal: React.FC<IProps> = ({ handleClose, open }) => {
   const classes = useStyles();
-  const [mode, setMode] = useState<"signup" | "signin">("signup");
+  const [mode, setMode] = useState<"signup" | "signin">("signin");
 
   const signInClicked = useCallback(() => {
     setMode("signin");
@@ -49,30 +50,28 @@ const AuthModal: React.FC<IProps> = ({ handleClose, open }) => {
   }, []);
 
   return (
-    <div>
-      <Modal
-        aria-labelledby="transition-modal-title"
-        aria-describedby="transition-modal-description"
-        className={classes.modal}
-        open={open}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={open}>
-          <div className={classes.paper}>
-            {mode === "signup" ? (
-              <SignUp signInClicked={signInClicked} />
-            ) : (
-              <SignIn signUpClicked={signUpClicked} />
-            )}
-          </div>
-        </Fade>
-      </Modal>
-    </div>
+    <Modal
+      aria-labelledby="transition-modal-title"
+      aria-describedby="transition-modal-description"
+      className={classes.modal}
+      open={open}
+      onClose={handleClose}
+      closeAfterTransition
+      BackdropComponent={Backdrop}
+      BackdropProps={{
+        timeout: 500,
+      }}
+    >
+      <Fade in={open}>
+        <div className={classes.paper}>
+          {mode === "signup" ? (
+            <SignUp signInClicked={signInClicked} handleClose={handleClose} />
+          ) : (
+            <SignIn signUpClicked={signUpClicked} handleClose={handleClose} />
+          )}
+        </div>
+      </Fade>
+    </Modal>
   );
 };
 

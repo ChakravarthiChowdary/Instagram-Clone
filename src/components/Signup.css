@@ -1,0 +1,9 @@
+.signup__logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+.signup__error {
+  color: red;
+  margin-bottom: 1rem;
+}
