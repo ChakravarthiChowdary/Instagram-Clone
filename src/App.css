@@ -5,3 +5,23 @@
 .App {
   background-color: #fafafa;
 }
+
+.App__container {
+  display: flex;
+  margin-top: 25px;
+}
+
+.App__imageUpload {
+  display: flex;
+  flex-direction: column;
+  max-height: 50vh;
+  align-self: center;
+}
+
+.app__posts {
+  display: flex;
+}
+
+.app__postsRight {
+  margin-left: 30px;
+}
