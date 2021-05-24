@@ -83,7 +83,7 @@ const ImageUpload = () => {
 
   return (
     <Paper className="Imageupload">
-      <BorderLinearProgress variant="determinate" value={progress} />
+      <BorderLinearProgress variant="determinate" value={50} />
 
       <TextField
         variant="outlined"
