@@ -8,11 +8,11 @@ It is a Instagram Clone app developed using React and FIREBASE as backend. Authe
 
 ## Demo
 
-![alt text](https://github.com/ChakravarthiChowdary/TODO_MERN_APP/blob/master/FRONTEND/src/images/app.PNG)
+![alt text](https://github.com/ChakravarthiChowdary/Instagram-Clone/tree/master/public/app1.PNG)
 
-![alt text](https://github.com/ChakravarthiChowdary/TODO_MERN_APP/blob/master/FRONTEND/src/images/app2.PNG)
+![alt text](https://github.com/ChakravarthiChowdary/Instagram-Clone/tree/master/public/app2.PNG)
 
-![alt text](https://github.com/ChakravarthiChowdary/TODO_MERN_APP/blob/master/FRONTEND/src/images/app3.PNG)
+![alt text](https://github.com/ChakravarthiChowdary/Instagram-Clone/tree/master/public/app3.PNG)
 
 ## Run it locally
 
